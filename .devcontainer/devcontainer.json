@@ -1,10 +1,11 @@
 {
-  "name": "Stocker Web (Node.js)",
+  "name": "Stocker Mobile (Expo)",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
-  "forwardPorts": [5173],
+  "postCreateCommand": "npm install && npm install --global @expo/ngrok",
+  "forwardPorts": [8081],
   "portsAttributes": {
-    "5173": {
-      "label": "Vite",
+    "8081": {
+      "label": "Expo",
       "onAutoForward": "notify"
     }
   },
